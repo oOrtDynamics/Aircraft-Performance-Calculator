@@ -9,3 +9,4 @@ This Web App accepts user inputs such as fuel capacity, payload, thrust, etc and
 * Allow users to specify rocket/aircraft characteristics such as weight, wing area, and engine thrust.
 * Provide graphical outputs and analysis of performance trade-offs.
 
+![initial page](https://github.com/oOrtDynamics/Rocket-Performance-Calculator/tree/main/img/Screenshot 2024-10-21 at 06.37.55.png
