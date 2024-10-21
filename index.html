@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.10.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.10.1/core.js"></script>
+    <title>Rocket Performance Calculator</title>
+</head>
+<body>
+    <div class="h1">
+        <h1>Rocket Performance Calculator</h1>
+    </div>
+    <div id="inputs">
+        <form action="" method="POST" autocomplete="off" onsubmit="return false">
+            <div id="fuel_capacity">
+                <label for="fuel_capacity">Fuel Capacity: </label>
+                <input type="text" id="fuel_capacity_input" name="fuel_capacity" placeholder="gal">
+            </div>
+            <div id="fuel_consumption_rate">
+                <label for="fuel_consumption_rate">Fuel Consumption Rate: </label>
+                <input type="text" id="fuel_consumption_rate_input" name="fuel_consumption_rate" placeholder="gal/hr">
+            </div>
+            <div id="weight">
+                <label for="weight">Spacecraft (empty) weight: </label>
+                <input type="text" id="weight_input" name="weight" placeholder="lbs">
+            </div>
+            <div id="payload">
+                <label for="payload">Payload: </label>
+                <input type="text" id="payload_input" name="payload" placeholder="lbs">
+            </div>
+            <div id="fuel_weight">
+                <label for="fuel_weight">Fuel Weight: </label>
+                <input type="text" id="fuel_weight_input" name="fuel_weight" placeholder="lbs">
+            </div>
+            <div id="thrust">
+                <label for="thrust">Thrust: </label>
+                <input type="text" id="thrust_input" name="thrust" placeholder="N">
+            </div>
+            <div id="drag">
+                <label for="drag">Drag: </label>
+                <input type="text" id="drag_input" name="drag" placeholder="N">
+            </div>
+            <div id="time">
+                <label for="time">&#916 Time: </label>
+                <input type="text" id="time_input" name="time" placeholder="sec">
+            </div>
+            <div id="velocity">
+                <label for="velocity">&#916 Velocity: </label>
+                <input type="text" id="velocity_input" name="velocity" placeholder="m/s">
+            </div>
+            <div id="true_airspeed">
+                <label for="true_airspeed">True Airspeed (TAS): </label>
+                <input type="text" id="true_airspeed_input" name="true_airspeed" placeholder="mph">
+            </div>
+            <div id="arm">
+                <label for="arm">Arm (Moment Arm): </label>
+                <input type="text" id="arm_input" name="arm" placeholder="in">
+            </div>
+            <div id="moment_index">
+                <label for="moment_index">Moment Index: </label>
+                <input type="text" id="moment_index_input" name="moment_index" placeholder="example: 100">
+            </div>
+            <div id="submit"><button type="submit" py-click="calculate">Calculate</button></div>
+            <div id="reset"><input type="reset" value="Reset"></div>
+        </form>
+    </div>
+    <div class="metrics">
+        <h1>Performance Calculations:</h1>
+    </div>
+    <div class="output" id="output1"></div>
+    <div class="output" id="output2"></div>
+    <div class="output" id="output3"></div>
+    <div class="output" id="output4"></div>
+    <div class="output" id="output5"></div>
+    <div class="output" id="output6"></div>
+    <div class="output" id="output7"></div>
+    <div class="output" id="output8"></div>
+    <script type="py" defer src="./main.py" config=""></script>
+</body>
+</html>

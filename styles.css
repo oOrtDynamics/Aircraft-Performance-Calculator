@@ -1,0 +1,73 @@
+.h1, .metrics {
+    display: block;
+    font-size: 3em;
+    color: white;
+}
+
+div {
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+button[type=submit] {
+    width: 400px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #45A049;
+}
+
+input[type=submit] {
+    width: 400px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45A049;
+}
+
+input[type=reset] {
+    width: 400px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #45A049;
+}
+
+body {
+    background-image: url("./img/engine.jpg");
+    background-size: 1600px;
+    background-repeat: no-repeat;
+}
+
+.output {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fc3d21;
+}
